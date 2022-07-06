@@ -39,7 +39,7 @@ endef
 ifeq ($(CONFIG_PACKAGE_mtkiappd_DUAL_BAND),y)
 	WIRELESS_IOCTL_PARAM:=-wi ra0 -wi rax0
 else
-	WIRELESS_IOCTL_PARAM:=-wi ra0
+	WIRELESS_IOCTL_PARAM:=-wi ra0 -wi rai0
 endif
 
 define Package/mtkiappd/install
